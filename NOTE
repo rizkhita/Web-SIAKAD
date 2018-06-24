@@ -1,0 +1,82 @@
+~~~~ Urutan fitur Pengajuan PNS: ~~~~
+
+Di Admin
+-Tahunan
+-LTN
+
+Di PNS
+-KAP (done)
+-Melahirkan (done)
+-Besar (done)
+
+-Tahunan 
+-LTN
+
+Di PPK
+
+"Hapus update BKD"
+
+-KAP (done)
+-Melahirkan (done)-->pindahin ke kadin
+-Besar (done)-->pindahin ke kadin
+-Besar (done)
+
+-Tahunan
+-Tidak untuk LTN
+
+Di Kepala Dinas 
+-Cuti Besar
+-Cuti LTN
+-Cuti Lahir
+
+SKIP FOR UPDATING
+
+~~~ Fitur Print Surat :    ~~~~
+
+Admin 
+-SK
+-Surat Legalitas
+-Surat Pengajuan ke BKD
+
+PNS
+-Surat Legalitas
+-Surat Pengajuan ke BKD 
+
+PPK
+-Ga ada
+
+Kadin 
+-Ga ada
+
+kalau error :
+update >> form action
+
+
+
+
+
+
+
+
+Urutan Fitur Pengajuan Kabid :
+Belum, jangan dulu dipikirin
+
+
+YANG PERLU DICEK :
+-VALUE JENIS CUTI
+-CRUD
+-
+
+
+!!!Every kodingan harus dibenerin sessionnya
+<?php
+ include('koneksi.php');
+  session_start(); 
+  if(!isset($_SESSION['id_admin']) and !isset($_SESSION['NIP'])){ 
+  header("location:../index.php");
+  exit();
+  }
+  include ('../head.php');
+?>
+
+#tambahin exit !
